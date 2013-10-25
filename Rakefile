@@ -74,6 +74,7 @@ blocks = WebBlocks.new webblocks_path
 include Rake::DSL
 task :default => [:_init] do
   blocks.rake
+  blocks.local.build_fonts
 end
 task :init => [:_init] do
   blocks.rake 'init'
