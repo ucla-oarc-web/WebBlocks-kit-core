@@ -1,0 +1,15 @@
+.site.audience {
+    font-size: 0.8em;
+    overflow: auto;
+    padding: 0.4em 0;
+    nav.list.horizontal {
+        float: right;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

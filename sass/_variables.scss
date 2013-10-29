@@ -1,9 +1,3 @@
-/* Font face definitions */
+$color-link-light-opacity: 1 !default;
 
-//@import "includes/font-face/proxima_nova";
-@import "includes/font-face/open_sans";
-
-/* Site components */
-
-@import "includes/site/header";
-@import "includes/site/footer";
+$ir-logo-url: url('../img/site/logo.png') !default;
