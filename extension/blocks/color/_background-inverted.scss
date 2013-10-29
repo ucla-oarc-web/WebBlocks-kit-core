@@ -1,0 +1,132 @@
+@import "compass";
+
+@mixin -base-color-branding-default-background-gradient-inverted {
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(-color-select-first-if-light($color-branding-default-background-shadow, $color-branding-default-background),-color-select-first-if-light($color-branding-default-background, $color-branding-default-background-shadow)));   
+}
+
+@mixin -base-color-branding-primary-background-gradient-inverted {
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(-color-select-first-if-light($color-branding-primary-background-shadow, $color-branding-primary-background),-color-select-first-if-light($color-branding-primary-background, $color-branding-primary-background-shadow)));   
+}
+
+@mixin -base-color-branding-secondary-background-gradient-inverted {
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(-color-select-first-if-light($color-branding-secondary-background-shadow, $color-branding-secondary-background),-color-select-first-if-light($color-branding-secondary-background, $color-branding-secondary-background-shadow)));   
+}
+
+@mixin -base-color-branding-tertiary-background-gradient-inverted {
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(-color-select-first-if-light($color-branding-tertiary-background-shadow, $color-branding-tertiary-background),-color-select-first-if-light($color-branding-tertiary-background, $color-branding-tertiary-background-shadow)));   
+}
+
+@mixin -base-color-branding-neutral-background-gradient-inverted {
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(-color-select-first-if-light($color-branding-neutral-background-shadow, $color-branding-neutral-background),-color-select-first-if-light($color-branding-neutral-background, $color-branding-neutral-background-shadow)));   
+}
+
+@mixin -base-color-mood-background-gradient-inverted {
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(-color-select-first-if-light($color-mood-default-background-shadow, $color-mood-default-background),-color-select-first-if-light($color-mood-default-background, $color-mood-default-background-shadow)));   
+}
+
+@mixin -base-color-mood-info-background-gradient-inverted {
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(-color-select-first-if-light($color-mood-info-background-shadow, $color-mood-info-background),-color-select-first-if-light($color-mood-info-background, $color-mood-info-background-shadow)));
+}
+
+@mixin -base-color-mood-important-background-gradient-inverted {
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(-color-select-first-if-light($color-mood-important-background-shadow, $color-mood-important-background),-color-select-first-if-light($color-mood-important-background, $color-mood-important-background-shadow)));
+}
+
+@mixin -base-color-mood-success-background-gradient-inverted {
+    @include background-image(linear-gradient(-color-select-first-if-light($color-mood-success-background-shadow, $color-mood-success-background),-color-select-first-if-light($color-mood-success-background, $color-mood-success-background-shadow)));
+}
+
+@mixin -base-color-mood-warning-background-gradient-inverted {
+    @include background-image(linear-gradient(-color-select-first-if-light($color-mood-warning-background-shadow, $color-mood-warning-background),-color-select-first-if-light($color-mood-warning-background, $color-mood-warning-background-shadow)));
+}
+
+@mixin -base-color-mood-error-background-gradient-inverted {
+    @include background-image(linear-gradient(-color-select-first-if-light($color-mood-error-background-shadow, $color-mood-error-background),-color-select-first-if-light($color-mood-error-background, $color-mood-error-background-shadow)));
+}
+
+@mixin -base-color-mood-danger-background-gradient-inverted {
+    @include background-image(linear-gradient(-color-select-first-if-light($color-mood-danger-background-shadow, $color-mood-danger-background),-color-select-first-if-light($color-mood-danger-background, $color-mood-danger-background-shadow)));
+}
+
+@mixin -base-color-mood-inverse-background-gradient-inverted {
+    @include background-image(linear-gradient(-color-select-first-if-light($color-mood-inverse-background-shadow, $color-mood-inverse-background),-color-select-first-if-light($color-mood-inverse-background, $color-mood-inverse-background-shadow)));
+}
+
+@mixin -base-color-mood-highlight-background-gradient-inverted {
+    @include background-image(linear-gradient(-color-select-first-if-light($color-mood-highlight-background-shadow, $color-mood-highlight-background),-color-select-first-if-light($color-mood-highlight-background, $color-mood-highlight-background-shadow)));
+}
+
+@mixin -base-color-mood-required-background-gradient-inverted {
+    @include background-image(linear-gradient(-color-select-first-if-light($color-mood-required-background-shadow, $color-mood-required-background),-color-select-first-if-light($color-mood-required-background, $color-mood-required-background-shadow)));
+}
+
+
+
+
+.gradient.inverted {
+        
+    &.default {
+        @include -base-color-branding-default-background-gradient-inverted;
+    }
+        
+    &.primary {
+        @include -base-color-branding-primary-background-gradient-inverted;
+    }
+        
+    &.secondary {
+        @include -base-color-branding-secondary-background-gradient-inverted;
+    }
+        
+    &.tertiary {
+        @include -base-color-branding-tertiary-background-gradient-inverted;
+    }
+        
+    &.neutral {
+        @include -base-color-branding-neutral-background-gradient-inverted;
+    }
+    
+    &.info {
+        @include -base-color-mood-info-background-gradient-inverted;
+    }
+
+    &.important {
+        @include -base-color-mood-important-background-gradient-inverted;
+    }
+
+    &.success {
+        @include -base-color-mood-success-background-gradient-inverted;
+    }
+
+    &.warning {
+        @include -base-color-mood-warning-background-gradient-inverted;
+    }
+
+    &.error {
+        @include -base-color-mood-error-background-gradient-inverted;
+    }
+
+    &.danger {
+        @include -base-color-mood-danger-background-gradient-inverted;
+    }
+
+    &.inverse {
+        @include -base-color-mood-inverse-background-gradient-inverted;
+    }
+
+    &.highlight {
+        @include -base-color-mood-highlight-background-gradient-inverted;
+    }
+
+    &.required {
+        @include -base-color-mood-required-background-gradient-inverted;
+    }
+
+}
