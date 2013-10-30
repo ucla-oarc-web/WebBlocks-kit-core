@@ -2,7 +2,7 @@ require 'pathname'
 rootdir = File.dirname(Pathname.new(__FILE__).realpath)
 
 # True to compile in debug mode (no minification)
-WebBlocks.config[:build][:debug] = false
+WebBlocks.config[:build][:debug] = true
 
 # The directory into which WebBlocks is built
 WebBlocks.config[:build][:dir] = "#{rootdir}/../"
