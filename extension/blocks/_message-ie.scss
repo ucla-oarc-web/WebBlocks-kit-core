@@ -1,0 +1,16 @@
+body .message header {
+    
+    // IE 8 supports rgba from _message.scss but requires background: transparent
+    background: transparent;
+    
+    /* commented out hack for IE7 and below - because we can't do borders the same way - better to show without background if we can't do a border to the same extent
+    // use filter for IE7 and below
+    // http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters
+    *zoom: 1;
+    @if $color-body-light {
+        *filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#25000000, endColorstr=#25000000);
+    } @else {
+        *filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#25FFFFFF, endColorstr=#25FFFFFF);
+    }
+    */
+}
