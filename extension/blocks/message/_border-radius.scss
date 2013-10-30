@@ -1,0 +1,4 @@
+// use of body is a precedence hack
+body .message {
+    border-radius: $entity-message-border-radius;
+}
