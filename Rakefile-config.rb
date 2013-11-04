@@ -21,6 +21,7 @@ WebBlocks.config[:src][:extension][:dir] = "#{rootdir}/extension"
 
 WebBlocks.config[:src][:extensions] << "blocks"
 WebBlocks.config[:src][:extensions] << "ucla"
+WebBlocks.config[:src][:extensions] << "ariaMapper"
 
 # Do not use an adapter
 WebBlocks.config[:src][:adapter] = false
