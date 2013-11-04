@@ -46,6 +46,9 @@ $entity-message-mood-important-dark-header-color: -darken-if-color-light-or-else
 $entity-message-mood-highlight-light-header-color: -darken-if-color-light-or-else-lighten($color-mood-highlight-background-light, $entity-message-header-color-brightness-difference-light) !default;
 $entity-message-mood-highlight-dark-header-color: -darken-if-color-light-or-else-lighten($color-mood-highlight-background-dark, $entity-message-header-color-brightness-difference-dark) !default;
 
+$entity-message-mood-required-light-header-color: -darken-if-color-light-or-else-lighten($color-mood-required-background-light, $entity-message-header-color-brightness-difference-light) !default;
+$entity-message-mood-required-dark-header-color: -darken-if-color-light-or-else-lighten($color-mood-required-background-dark, $entity-message-header-color-brightness-difference-dark) !default;
+
 $entity-message-mood-inverse-light-header-color: -darken-if-color-light-or-else-lighten($color-mood-inverse-background-light, $entity-message-header-color-brightness-difference-light) !default;
 $entity-message-mood-inverse-dark-header-color: -darken-if-color-light-or-else-lighten($color-mood-inverse-background-dark, $entity-message-header-color-brightness-difference-dark) !default;
 
