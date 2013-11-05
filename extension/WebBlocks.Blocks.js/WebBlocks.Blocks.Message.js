@@ -9,6 +9,8 @@ WebBlocks.Blocks.addBlock({
     'definition': function(){
         
         var COLOR_CLASSES = $.merge($.merge([],WebBlocks.Blocks.Color.COLORS),WebBlocks.Blocks.Color.FLAVORS);
+        
+        this.tag = 'aside';
 
         this.initialize = function(){
             this.addClass('message');
