@@ -76,9 +76,15 @@ nav.mega {
             
             float: left;
             
+            > h1, > a {
+                padding-right: 15px;
+                cursor: pointer;
+            }
+            
             &.active {
                 > h1, > a {
                     background-color: $color-body-background;
+                    padding: 0 15px 0 15px;
                 }
                 > h1 > a , > a {
                     color: $color-body-link-text !important;
@@ -88,14 +94,29 @@ nav.mega {
                 }
             }
             
-            &:not(:first-child) {
+            /* left border -- if not first child and neither preceding nor current are active */
+            & + li {
                 
-                padding-left: 20px;
+                &.active {
+                    > :first-child:before {
+                        display: none;
+                    }
+                }
                 
-                &:before {
+                > :first-child:before {
+                    width: 19px;
                     content: "|";
+                    display: block;
                     float: left;
-                    margin-left: -10px;
+                    margin-left: -4px;
+                    opacity: 0;
+                }
+                
+            }
+            &:not(.active) + li:not(.active) {
+                
+                > :first-child:before {
+                    opacity: 1;
                 }
                 
             }
