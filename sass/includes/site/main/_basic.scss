@@ -1,0 +1,10 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #4e8db6;
+}
+site.main > h1 {
+    text-transform: uppercase;
+}
+.message h1 {
+    color: inherit;
+    text-transform: inherit;
+}
