@@ -41,24 +41,10 @@ header.site {
         }
     }
     
-    nav.search form.form input[type="search"] {
-        font-size: 14px;
-        line-height: 14px;
-        padding: 3px 20px 3px 3px;
-        border-radius: 0;
-    }
-    
-    nav.search form.form input[type="submit"]{
-        @include -base-image-replacement;
-        background: url('../img/site/search.png') top center no-repeat;
-        width: 18px;
-        height: 20px;
-    }
-    
     
     @media(max-width:$breakpoint-small){
         nav.search {
-            margin-top: 10px;
+            margin: 10px 0;
         }
     }
     
@@ -82,7 +68,7 @@ header.site {
 
         hgroup + nav.search + nav.mega:before {
             content: "";
-            height: 0;
+            height: 4px;
         }
     }
     

@@ -52,7 +52,7 @@ WebBlocks.navMegaMenu = function(){
             base = navEle.children('ul');
         
         if(visible.length) // if open sub-menu, set height as sum of sub-menu and top-level menu
-            $(navEle).css('height', (visible.outerHeight()+base.outerHeight()+10)+'px')
+            $(navEle).css('height', (visible.outerHeight()+base.outerHeight())+'px')
         else // if no sub-menu open, set height to height of top-level menu
             $(navEle).css('height', base.outerHeight()+'px')
 

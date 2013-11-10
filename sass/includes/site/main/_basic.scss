@@ -4,7 +4,14 @@ h1, h2, h3, h4, h5, h6 {
 site.main > h1 {
     text-transform: uppercase;
 }
-.message h1 {
-    color: inherit;
-    text-transform: inherit;
+.message, nav.list, nav.search {
+    h1, h2, h3, h4, h5, h6 {
+        color: inherit;
+    }
+}
+[class*="panel-"] > .inner {
+    padding: 10px;
+}
+.with-bottom-margin, .with-bottom-margin-panels > [class*="panel-"] {
+    margin-bottom: 0.5em;
 }

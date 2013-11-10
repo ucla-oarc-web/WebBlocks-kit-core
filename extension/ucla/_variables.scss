@@ -20,7 +20,8 @@ $ucla-tertiary-red: #b73434;
 $color-branding-primary: #003971 !default;
 $color-branding-primary-background: #245b94 !default;
 
-$color-branding-secondary: $ucla-secondary-ltblue !default;
+//$color-branding-secondary: $ucla-secondary-ltblue !default;
+$color-branding-secondary: #a4c1d5 !default;
 $color-branding-tertiary: $ucla-secondary-gold !default;
 $color-mood-info: $ucla-secondary-ltblue !default;
 $color-mood-success: $ucla-tertiary-neon-green !default;
@@ -35,8 +36,8 @@ $color-mood-danger: #a00 !default;
 
 $color-contrast-threshold: 50% !default;
 
-$color-background-light-brightness: 95% !default;
-$color-background-shadow-light-brightness: 90% !default;
+$color-background-light-brightness: 96% !default;
+$color-background-shadow-light-brightness: 93% !default;
 $color-light-border-brightness: 70% !default;
 $color-contrast-threshold-light: $color-contrast-threshold !default;
 
