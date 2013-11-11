@@ -1,0 +1,12 @@
+.quicklinks {
+    
+    > figure {
+        
+        text-align: center;
+        
+        > figcaption {
+            margin-bottom: 0.5*$type-line-spacing;
+        }
+    }
+    
+}

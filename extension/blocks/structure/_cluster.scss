@@ -1,0 +1,127 @@
+// this value may be overridden
+$structure-cluster-element-gutter:        $structure-panel-gutter !default;
+
+// these values cannot be overridden
+// provided only to make the math make more sense and for later extensibility
+$structure-cluster-increment:             60;
+$structure-cluster-element-width:         ((100% - ($structure-cluster-increment - 1) * $structure-cluster-element-gutter) / $structure-cluster-increment);
+
+
+@mixin -base-structure-cluster-element {
+    display: block;
+    float: left;
+    min-height: 1px;
+    box-sizing: border-box;
+    &:not(:first-child) {
+        margin-left: $structure-cluster-element-gutter;
+    }
+}
+
+@function -base-structure-cluster-element-fluid-span-value($columns, $fluidGridColumnWidth, $fluidGridGutterWidth) {
+    @return ($fluidGridColumnWidth * $columns) + ($fluidGridGutterWidth * ($columns - 1));
+}
+
+@mixin -base-structure-cluster-element-fluid-span($columns, $fluidGridColumnWidth, $fluidGridGutterWidth) {
+    width: -base-structure-cluster-element-fluid-span-value($columns, $fluidGridColumnWidth, $fluidGridGutterWidth);
+}
+
+.cluster {
+    
+    @extend .float-container;
+    
+    img {
+        @extend .constrained;
+    }
+    
+    @media (min-width: $breakpoint-xsmall+1){
+    
+        > * {
+            @include -base-structure-cluster-element;
+        }
+
+        > *:first-child:nth-last-child(2),
+        > *:first-child:nth-last-child(2) ~ *,
+        > *:first-child:nth-last-child(3),
+        > *:first-child:nth-last-child(3) ~ *,
+        > *:first-child:nth-last-child(4),
+        > *:first-child:nth-last-child(4) ~ *,
+        > *:first-child:nth-last-child(5),
+        > *:first-child:nth-last-child(5) ~ *,
+        > *:first-child:nth-last-child(6),
+        > *:first-child:nth-last-child(6) ~ * {
+            @include -base-structure-cluster-element-fluid-span($structure-cluster-increment/2, $structure-cluster-element-width, $structure-cluster-element-gutter);
+        }
+        
+    }
+    
+    @media (min-width: $breakpoint-xsmall+1) and (max-width: $breakpoint-small) {
+        
+        > *:first-child:nth-last-child(5) ~ *:nth-child(3),
+        > *:first-child:nth-last-child(6) ~ *:nth-child(2n+1) {
+            margin-left: 0;
+        }
+        
+        > *:first-child:nth-last-child(3) ~ *:last-child,
+        > *:first-child:nth-last-child(5) ~ *:last-child {
+            margin-left: $structure-cluster-element-gutter + 0.5 * -base-structure-cluster-element-fluid-span-value($structure-cluster-increment/2, $structure-cluster-element-width, $structure-cluster-element-gutter);
+        }
+        
+    }
+    
+    @media (min-width: $breakpoint-small+1){
+        
+        > *:first-child:nth-last-child(3),
+        > *:first-child:nth-last-child(3) ~ *,
+        > *:first-child:nth-last-child(5),
+        > *:first-child:nth-last-child(5) ~ *,
+        > *:first-child:nth-last-child(6),
+        > *:first-child:nth-last-child(6) ~ * {
+            @include -base-structure-cluster-element-fluid-span($structure-cluster-increment/3, $structure-cluster-element-width, $structure-cluster-element-gutter);
+        }
+        
+    }
+    
+    @media (min-width: $breakpoint-xsmall+1) and (max-width: $breakpoint-medium-small) {
+        
+        > *:first-child:nth-last-child(4) ~ *:nth-child(3) {
+            margin-left: 0;
+        }
+        
+    }
+    
+    @media (min-width: $breakpoint-medium-small+1){
+        
+        > *:first-child:nth-last-child(4),
+        > *:first-child:nth-last-child(4) ~ * {
+            @include -base-structure-cluster-element-fluid-span($structure-cluster-increment/4, $structure-cluster-element-width, $structure-cluster-element-gutter);
+        }
+        
+    }
+    
+    @media (min-width: $breakpoint-small+1) and (max-width: $breakpoint-medium){
+        
+        > *:first-child:nth-last-child(5) ~ *:nth-child(4) {
+            margin-left: $structure-cluster-element-gutter + 0.5 * -base-structure-cluster-element-fluid-span-value($structure-cluster-increment/3, $structure-cluster-element-width, $structure-cluster-element-gutter);
+        }
+        
+        > *:first-child:nth-last-child(6) ~ *:nth-child(4) {
+            margin-left: 0;
+        }
+        
+    }
+    
+    @media (min-width: $breakpoint-medium){
+        
+        > *:first-child:nth-last-child(5),
+        > *:first-child:nth-last-child(5) ~ * {
+            @include -base-structure-cluster-element-fluid-span($structure-cluster-increment/5, $structure-cluster-element-width, $structure-cluster-element-gutter);
+        }
+        
+        > *:first-child:nth-last-child(6),
+        > *:first-child:nth-last-child(6) ~ * {
+            @include -base-structure-cluster-element-fluid-span($structure-cluster-increment/6, $structure-cluster-element-width, $structure-cluster-element-gutter);
+        }
+        
+    }
+    
+}
