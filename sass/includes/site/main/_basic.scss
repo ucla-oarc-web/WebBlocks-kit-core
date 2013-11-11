@@ -9,9 +9,3 @@ site.main > h1 {
         color: inherit;
     }
 }
-[class*="panel-"] > .inner {
-    padding: 10px;
-}
-.with-bottom-margin, .with-bottom-margin-panels > [class*="panel-"] {
-    margin-bottom: 0.5em;
-}

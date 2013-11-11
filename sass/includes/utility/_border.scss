@@ -1,0 +1,33 @@
+.border-top {
+    border-top: 1px solid;
+    padding-top: 10px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+.border-strong {
+    border-width: 3px;
+}
+
+.border-primary {
+    border-color: $color-branding-primary-light-border;
+}
+
+.border-secondary {
+    border-color: $color-branding-secondary-light-border;
+}
+
+.border-tertiary {
+    border-color: $color-branding-tertiary-light-border;
+}
+
+.border-neutral {
+    border-color: $color-branding-neutral-light-border;
+}
+
+.border-default {
+    border-color: $color-branding-default-light-border;
+}

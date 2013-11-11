@@ -1,0 +1,17 @@
+.margin-bottom, .panels-margin-bottom > [class*="panel-"] {
+    margin-bottom: 10px;
+}
+
+.margin-top, .panels-margin-top > [class*="panel-"] {
+    margin-top: 10px;
+}
+
+.margin-top.border-top {
+    margin-top: 16px;
+    padding-top: 20px;
+}
+
+.margin-bottom.border-bottom {
+    margin-bottom: 16px;
+    padding-bottom: 20px;
+}

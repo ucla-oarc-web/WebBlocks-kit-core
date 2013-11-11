@@ -29,7 +29,7 @@ $structure-cluster-element-width:         ((100% - ($structure-cluster-increment
     
     @extend .float-container;
     
-    &.with-bottom-margin {
+    &.margin-bottom {
         margin-bottom: 0;
         > * {
             margin-bottom: 0.5em;
