@@ -11,6 +11,9 @@
     footer {
         @extend .text-small;
         @extend .text-neutral;
+        small {
+            font-size: 1em;
+        }
     }
     
     &.summary {
