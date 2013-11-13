@@ -1,5 +1,24 @@
 /****************************************************************************
- * Branding Colors
+ * Typography Settings
+ */
+
+$type-font-size:                 0.85em !default;
+$type-font-size-h1:              2.6em !default;
+$type-font-size-h2:              1.9em !default;
+$type-font-size-h3:              1.5em !default;
+$type-font-size-h4:              1.3em !default;
+$type-font-size-h5:              1.15em !default;
+$type-font-size-h6:              1em !default;
+
+
+/****************************************************************************
+ * Utility Settings
+ */
+
+$ir-logo-url: url('../img/site/logo.png') !default;
+
+/****************************************************************************
+ * UCLA Base Colors (from Style Guide)
  */
 
 $ucla-primary: #3399cc;
@@ -14,13 +33,11 @@ $ucla-tertiary-magenta: #ff00a5;
 $ucla-tertiary-cyan: #00ffff;
 $ucla-tertiary-red: #b73434;
 
-
-
+/****************************************************************************
+ * Base Color Definitions
+ */
 
 $color-branding-primary: #003971 !default;
-$color-branding-primary-background: #245b94 !default;
-
-//$color-branding-secondary: $ucla-secondary-ltblue !default;
 $color-branding-secondary: #a4c1d5 !default;
 $color-branding-tertiary: $ucla-secondary-gold !default;
 $color-mood-info: $ucla-secondary-ltblue !default;
@@ -34,6 +51,10 @@ $color-mood-highlight: $ucla-tertiary-magenta !default;
 $color-mood-error: #a00 !default;
 $color-mood-danger: #a00 !default;
 
+/****************************************************************************
+ * Generic Generator Definitions
+ */
+
 $color-contrast-threshold: 50% !default;
 
 $color-background-light-brightness: 96% !default;
@@ -45,3 +66,17 @@ $color-background-dark-brightness: 10% !default;
 $color-background-shadow-dark-brightness: 13% !default;
 $color-dark-border-brightness: 35% !default;
 $color-contrast-threshold-dark: $color-contrast-threshold !default;
+
+$color-link-light-opacity: 1 !default;
+
+/****************************************************************************
+ * Specific Generator Definitions
+ */
+
+$color-branding-neutral-text-brightness: 60%;
+
+/****************************************************************************
+ * Specific Computed Color Definitions
+ */
+
+$color-branding-primary-background: #245b94 !default;

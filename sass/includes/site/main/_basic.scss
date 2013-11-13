@@ -9,3 +9,8 @@ site.main > h1 {
         color: inherit;
     }
 }
+header.condensed, footer.condensed {
+    > *:not(:last-child) {
+        margin-bottom: 0;
+    }
+}

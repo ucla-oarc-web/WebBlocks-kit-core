@@ -1,0 +1,12 @@
+$form-font-size: 1em;
+
+form.form {
+    label,
+    button,
+    select,
+    textarea,
+    input
+    .uneditable-input {
+        font-size: $form-font-size !important; //important is a hack until this fix is rolled into core
+    }
+}

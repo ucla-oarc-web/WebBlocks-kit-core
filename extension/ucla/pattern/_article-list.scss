@@ -1,0 +1,24 @@
+.article.list {
+    
+    > article {
+        
+        &:not(:last-child){
+            margin-bottom: 0.8*$type-line-spacing;
+        }
+        
+        > footer {
+            @extend .text-small;
+            @extend .text-neutral;
+        }
+        
+    }
+    
+    &.summary {
+        > article {
+            h1, h2, h3, h4, h5, h6, p {
+                margin: 0 0 0.2*$type-line-spacing;
+            }
+        }
+    }
+    
+}
