@@ -14,3 +14,17 @@ header.condensed, footer.condensed {
         margin-bottom: 0;
     }
 }
+
+header.site, footer.site, nav.bar, nav.list, nav.breadcrumb, .message {
+    a {
+        border-bottom: none;
+    }
+}
+
+a {
+    border-bottom: 1px lighten(#073198, 40%) dotted;
+    text-decoration: none;
+}
+a:hover:not(.button) {
+    border-bottom: none;
+}
