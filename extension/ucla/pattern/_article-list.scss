@@ -6,11 +6,11 @@
             margin-bottom: 0.8*$type-line-spacing;
         }
         
-        > footer {
-            @extend .text-small;
-            @extend .text-neutral;
-        }
+    }
         
+    footer {
+        @extend .text-small;
+        @extend .text-neutral;
     }
     
     &.summary {
