@@ -1,0 +1,50 @@
+.microdata {
+    
+    [itemprop="addressLocality"] {
+        &:not(:last-child):after {
+            content: ', ';
+        }
+    }
+    
+    .labeled {
+    
+        &[itemprop] {
+            &:before{
+                display: inherit;
+                font-weight: bold;
+            }
+        }
+
+        &[itemtype*="schema.org/PostalAddress"]:before {
+            content: "Address:";
+            display: block;
+            font-weight: bold;
+        }
+
+        &[itemprop="telephone"]:before {
+            content: "Phone: ";
+        }
+
+        &[itemprop="faxnumber"]:before {
+            content: "Fax: ";
+        }
+
+        &[itemprop="email"]:before {
+            content: 'Email: ';
+        }
+    
+    }
+    
+}
+
+
+
+.vcard {
+    
+    span.locality, span.region {
+        &:not(:last-child):after { 
+            content: ","; 
+        }
+    }
+    
+}

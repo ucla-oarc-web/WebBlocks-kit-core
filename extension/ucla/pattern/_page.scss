@@ -1,0 +1,14 @@
+.page-title {
+    @extend .border-bottom;
+    @extend .border-secondary;
+    @extend .text-upper;
+    margin-bottom: 0.75em;
+}
+
+.page-section {
+    margin-bottom: 1.5em;
+}
+
+.page-section:last-child {
+    margin-bottom: 0;
+}
