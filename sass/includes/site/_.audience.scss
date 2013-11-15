@@ -1,10 +1,16 @@
 .site.audience {
+    
     font-size: 0.8em;
     overflow: auto;
-    padding: 0.4em 0;
+    padding: 0.6em 0;
+    
     nav.list.horizontal {
         float: right;
+        ul {
+            margin: 0;
+        }
     }
+    
     a {
         text-decoration: none;
         font-weight: bold;
