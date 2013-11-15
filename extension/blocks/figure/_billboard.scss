@@ -1,0 +1,31 @@
+figure.billboard {
+    
+    figcaption {
+        @include -base-color-branding-tertiary-background;
+        padding: 20px;
+    }
+    
+    img {
+        @extend .constrained;
+    }
+    
+    @media (min-width: 601px ) {
+    
+        position: relative;
+        margin: -20px -20px 30px;
+        
+        &:not(:first-child) {
+            margin-top: 0;
+        }
+        
+        figcaption {
+            position: absolute;
+            right: -10px;
+            bottom: -20px;
+            min-height: 60px;
+            min-width: 25%;
+            max-width: 40%;
+        }
+        
+    }
+}
