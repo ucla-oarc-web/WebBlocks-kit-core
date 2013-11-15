@@ -1,18 +1,13 @@
 nav.list.horizontal {
-    @extend .float-container;
-    > ul > li {
-        float: left;
-        > a {
+    
+    > ul {
+        
+        @extend ul.list.horizontal;
+        
+        > li > a {
             padding: 0;
         }
-        &:not(:first-child) {
-            padding-left: 20px;
-            &:before {
-                content: "|";
-                float: left;
-                margin-left: -10px;
-            }
-
-        }
+        
     }
+    
 }
