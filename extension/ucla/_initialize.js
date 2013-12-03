@@ -5,7 +5,7 @@ $(document).ready(function(){
      * proper HTML and WebBlocks conventions.
      */
 
-    $('body').ariaWebBlocksMapper();
+    $('body').blocks().ariaMapper();
 
     /**
      * This takes all forms in the DOM and processes data-required="true" on the
