@@ -39,4 +39,4 @@ WebBlocks.config[:src][:adapter] = false
 #WebBlocks.config[:src][:adapter] = 'bootstrap'
 
 # Use the ARIA Mapper package
-WebBlocks.config[:build][:packages] << :jqueryariamapper
+WebBlocks.config[:src][:packages] << :jqueryariamapper
