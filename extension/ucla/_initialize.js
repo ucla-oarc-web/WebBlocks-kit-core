@@ -12,6 +12,6 @@ $(document).ready(function(){
      * controls.
      */
 
-    $('body').blocks().processFormRequired();
+    $('body').blocks().requiredFormControls('init');
 
 });

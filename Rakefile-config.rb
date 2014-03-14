@@ -7,6 +7,15 @@ WebBlocks.config[:build][:debug] = true
 # The directory into which WebBlocks is built
 WebBlocks.config[:build][:dir] = "#{rootdir}/../"
 
+# Explicit definitions of modules included in WebBlocks build
+WebBlocks.config[:src][:modules] = [
+  'Base',
+  'Compatibility',
+  'Entity',
+  'Extend/Base/Color/Branding/Background_Gradient_Inverted',
+  'Extend/Base/Color/Mood/Background_Gradient_Inverted'
+]
+
 # The directory where sources for the build are located
 WebBlocks.config[:src][:dir] = "#{rootdir}"
 

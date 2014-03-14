@@ -1,18 +1,4 @@
-$nav-tabs-border-color: transparent transparent $color-branding-default-light-border transparent !default;
-$nav-tabs-hover-border-color: $color-branding-default-light-border !default;
-$nav-tabs-active-border-color: $color-branding-default-light-border !default;
-
 nav.tabs {
-    
-    @include -base-block-float-container;
-    border-bottom: 1px solid;
-    border-color: $nav-tabs-border-color;
-    margin-bottom: $type-line-spacing;
-    
-    > *, > ul > li, > ul > li > a {
-        display: block; 
-        float: left; 
-    }
     
     > h1, > h2, > h3, > h4, > h5, > h6, ul > li > a {
         font-size: 1em;
@@ -20,21 +6,6 @@ nav.tabs {
         margin: 0 10px -1px 0;
         line-height: $type-line-height;
         padding: 6px 8px 6px 0;
-    }
-    
-    > ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        > li {
-            > a {
-                padding: 6px 16px;
-                border: 1px solid;
-                @include border-radius(4px 4px 0 0);
-                border-color: $nav-tabs-hover-border-color;
-            }
-        }
-        
     }
     
 }
